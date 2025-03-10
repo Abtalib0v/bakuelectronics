@@ -1,5 +1,6 @@
 #bestseller {
     margin: 70px 0;
+
     .text {
         h1 {
             color: #ea2427;
@@ -99,11 +100,13 @@
                         box-shadow: 0 9px 25px 0 #00000017;
                         transition: 0.2s;
                         border: 0px;
+
                         i {
                             width: 18px;
                             height: 18px;
-                           
+
                         }
+
                         &:hover {
                             background-color: #fce3e3;
                             color: #ea2427;
@@ -116,14 +119,17 @@
         }
 
         .cards_text {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
 
             .text_price {
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
                 align-items: flex-start;
-                margin-bottom: 22px;
-                margin-top: auto;
+                margin-bottom: auto;
+                
 
                 .icons_name {
 
@@ -168,8 +174,13 @@
 
 
 
+
+            }
+
+            .price_btn {
                 .cards_price {
                     display: flex;
+                    margin-bottom: 22px;
 
                     .price_left {
                         display: flex;
@@ -224,66 +235,68 @@
                         color: #333;
                     }
                 }
-            }
 
-            .cards_btn {
-                display: flex;
-                gap: 8px;
-                margin-top: auto;
-
-                #sell {
-                    border-radius: 12px;
-                    border: 0px;
-                    padding: 13px 14px;
-                    background-color: #e1e1e1;
-                    font-size: 14px;
-                    line-height: 19px;
-                    font-weight: 500;
-                    flex-grow: 1;
+                .cards_btn {
                     display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    gap: 4px;
-                    transition: 0.2s ease-in-out;
+                    gap: 8px;
+                    margin-top: auto;
+                    
 
-                    i {
-                        font-size: 18px;
+                    #sell {
+                        border-radius: 12px;
+                        border: 0px;
+                        padding: 13px 14px;
+                        background-color: #e1e1e1;
+                        font-size: 14px;
+                        line-height: 19px;
+                        font-weight: 500;
+                        flex-grow: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 4px;
+                        transition: 0.2s ease-in-out;
+
+                        i {
+                            font-size: 18px;
+                        }
+
+                        p {
+                            text-align: center;
+                            margin: 0 auto;
+
+                        }
+
+                        &:hover {
+                            background-color: #ea2427;
+                            color: #e1e1e1;
+                        }
                     }
 
-                    p {
-                        text-align: center;
-                        margin: 0 auto;
+                    #like {
+                        background: #e1e1e1;
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 12px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: .2s;
+                        color: #333;
+                        border: 0px;
 
-                    }
+                        i {
+                            font-size: 20px;
+                        }
 
-                    &:hover {
-                        background-color: #ea2427;
-                        color: #e1e1e1;
+                        &:hover {
+                            background-color: #ea2427;
+                            color: #e1e1e1;
+                        }
                     }
                 }
-
-                #like {
-                    background: #e1e1e1;
-                    width: 45px;
-                    height: 45px;
-                    border-radius: 12px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    transition: .2s;
-                    color: #333;
-                    border: 0px;
-
-                    i {
-                        font-size: 20px;
-                    }
-
-                    &:hover {
-                        background-color: #ea2427;
-                        color: #e1e1e1;
-                    }
-                }
             }
+
 
         }
 

@@ -161,13 +161,17 @@ table {
   background-color: #fce3e3;
   color: #ea2427;
 }
+#bestseller .cards .cards_text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 #bestseller .cards .cards_text .text_price {
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: flex-start;
-  margin-bottom: 22px;
-  margin-top: auto;
+  margin-bottom: auto;
 }
 #bestseller .cards .cards_text .text_price .icons_name .text_icons {
   display: flex;
@@ -195,15 +199,16 @@ table {
   margin: 7px 0px 24px 0px;
   overflow: hidden;
 }
-#bestseller .cards .cards_text .text_price .cards_price {
+#bestseller .cards .cards_text .price_btn .cards_price {
   display: flex;
+  margin-bottom: 22px;
 }
-#bestseller .cards .cards_text .text_price .cards_price .price_left {
+#bestseller .cards .cards_text .price_btn .cards_price .price_left {
   display: flex;
   flex-direction: column;
   padding-right: 15px;
 }
-#bestseller .cards .cards_text .text_price .cards_price .price_left h1 {
+#bestseller .cards .cards_text .price_btn .cards_price .price_left h1 {
   font-size: 14px;
   line-height: 19px;
   font-weight: 500;
@@ -213,7 +218,7 @@ table {
   align-items: center;
   text-decoration: line-through;
 }
-#bestseller .cards .cards_text .text_price .cards_price .price_left h2 {
+#bestseller .cards .cards_text .price_btn .cards_price .price_left h2 {
   font-size: 20px;
   line-height: 22px;
   font-weight: 700;
@@ -221,13 +226,13 @@ table {
   align-items: center;
   color: #333;
 }
-#bestseller .cards .cards_text .text_price .cards_price .price_right {
+#bestseller .cards .cards_text .price_btn .cards_price .price_right {
   display: flex;
   flex-direction: column;
   padding-left: 15px;
   border-left: 1px solid #dedede;
 }
-#bestseller .cards .cards_text .text_price .cards_price h1 {
+#bestseller .cards .cards_text .price_btn .cards_price h1 {
   font-size: 14px;
   line-height: 19px;
   font-weight: 500;
@@ -237,7 +242,7 @@ table {
   align-items: center;
   text-decoration: line-through;
 }
-#bestseller .cards .cards_text .text_price .cards_price h2 {
+#bestseller .cards .cards_text .price_btn .cards_price h2 {
   font-size: 20px;
   line-height: 22px;
   font-weight: 700;
@@ -245,12 +250,12 @@ table {
   align-items: center;
   color: #333;
 }
-#bestseller .cards .cards_text .cards_btn {
+#bestseller .cards .cards_text .price_btn .cards_btn {
   display: flex;
   gap: 8px;
   margin-top: auto;
 }
-#bestseller .cards .cards_text .cards_btn #sell {
+#bestseller .cards .cards_text .price_btn .cards_btn #sell {
   border-radius: 12px;
   border: 0px;
   padding: 13px 14px;
@@ -265,18 +270,18 @@ table {
   gap: 4px;
   transition: 0.2s ease-in-out;
 }
-#bestseller .cards .cards_text .cards_btn #sell i {
+#bestseller .cards .cards_text .price_btn .cards_btn #sell i {
   font-size: 18px;
 }
-#bestseller .cards .cards_text .cards_btn #sell p {
+#bestseller .cards .cards_text .price_btn .cards_btn #sell p {
   text-align: center;
   margin: 0 auto;
 }
-#bestseller .cards .cards_text .cards_btn #sell:hover {
+#bestseller .cards .cards_text .price_btn .cards_btn #sell:hover {
   background-color: #ea2427;
   color: #e1e1e1;
 }
-#bestseller .cards .cards_text .cards_btn #like {
+#bestseller .cards .cards_text .price_btn .cards_btn #like {
   background: #e1e1e1;
   width: 45px;
   height: 45px;
@@ -288,10 +293,10 @@ table {
   color: #333;
   border: 0px;
 }
-#bestseller .cards .cards_text .cards_btn #like i {
+#bestseller .cards .cards_text .price_btn .cards_btn #like i {
   font-size: 20px;
 }
-#bestseller .cards .cards_text .cards_btn #like:hover {
+#bestseller .cards .cards_text .price_btn .cards_btn #like:hover {
   background-color: #ea2427;
   color: #e1e1e1;
 }
