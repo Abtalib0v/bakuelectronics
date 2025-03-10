@@ -1,0 +1,117 @@
+.g-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 100px;
+}
+.navbar {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    position: relative;
+    position: fixed;
+    z-index: 40;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 10px 100px;
+    background-color: #fff;
+
+    .logo {
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .catalog {
+        button {
+            display: flex;
+            font-family: "SF Pro Display";
+            gap: 6px;
+            align-items: center;
+            box-shadow: 0 10px 19px 0 #00000008;
+            background-color: #333;
+            padding: 14px 21px;
+            border-radius: 36px;
+            transition: .3s;
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            border: 0px;
+
+            &:hover {
+                background-color: #4a4a4a;
+            }
+
+            i {}
+        }
+
+
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        background-color: #f5f5f5;
+        border-radius: 12px;
+        height: 50px;
+        flex-grow: 1;
+        position: relative;
+        z-index: 10;
+
+        input {
+            font-family: "SF Pro Display";
+
+            border: none;
+            outline: none;
+            font-size: 14px;
+            background-color: #f5f5f5;
+            width: 100%;
+            padding-left: 22px;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background-color: inherit;
+            padding: 6px 18px;
+            border-radius: 12px;
+
+            i {
+                font-size: 18px;
+                color: #333;
+                opacity: .6;
+
+            }
+        }
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+
+        .scales {
+            cursor: pointer;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 12px;
+            color: #333;
+            background-color: #f5f5f5;
+            transition: .3s;
+            box-shadow: 0 13.1707324982px 25.0243930817px 0 #00000008;
+            &:hover {
+                background-color: #e1e1e1;
+            }
+            i {
+            }
+        }
+
+
+    }
+}
